@@ -1,6 +1,6 @@
 {
     "question": "What’s binary search’s time complexity?",
-    "options": ["A) O(n)", "B) O(log n)", "C) O(n²)"],
+    "options": ["A) O(n)", "B) O(log n)", "C) O(n²)", "D) None of these"],
     "answer": "B) O(log n)",
     "note": "Soul sisters, binary search reflects His efficient light—find answers fast! 🌟"
   }
