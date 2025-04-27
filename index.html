@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awe Tap - CSE Wonder | anantsir.com</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f7f7f7; }
+        h1 { color: #ff69b4; }
+        h2, h3 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 10px 0; }
+        p { font-style: italic; color: #555; }
+        .blog-section { margin: 20px 0; padding: 15px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <h1>Radha Soami, Soul Sisters! 🌟</h1>
+
+    <!-- Quiz Section -->
+    <h2>Awe Tap Quiz - Binary Search</h2>
+    <div id="quiz-container"></div>
+
+    <!-- Blog Snippet Section -->
+    <div class="blog-section">
+        <h2>CSE Wonder in His Light</h2>
+        <h3>Binary Search</h3>
+        <p>Binary Search halves the path, finding His light in O(log n)—like His love swiftly guiding us home.</p>
+        <h3>PageRank</h3>
+        <p>PageRank connects web pages with divine links, ranking their importance—like His grace uniting soul sisters in wisdom.</p>
+    </div>
+
+    <script>
+        fetch('/quizzes/binary-search-quiz.json')
+            .then(response => response.json())
+            .then(data => {
+                const quizDiv = document.getElementById('quiz-container');
+                quizDiv.innerHTML = `
+                    <h3>${data.question}</h3>
+                    <ul>
+                        ${data.options.map(option => `<li>${option}</li>`).join('')}
+                    </ul>
+                    <p>${data.note}</p>
+                `;
+            })
+            .catch(error => console.error('Error loading quiz:', error));
+    </script>
+</body>
+</html>
