@@ -3,47 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awe Tap - CSE Wonder | anantsir.com</title>
+    <title>Radha Soami | Bio of [Your Name]</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f7f7f7; }
-        h1 { color: #ff69b4; }
-        h2, h3 { color: #333; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 10px 0; }
-        p { font-style: italic; color: #555; }
-        .blog-section { margin: 20px 0; padding: 15px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .bio-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ff69b4;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>Radha Soami, Soul Sisters! 🌟</h1>
-
-    <!-- Quiz Section -->
-    <h2>Awe Tap Quiz - Binary Search</h2>
-    <div id="quiz-container"></div>
-
-    <!-- Blog Snippet Section -->
-    <div class="blog-section">
-        <h2>CSE Wonder in His Light</h2>
-        <h3>Binary Search</h3>
-        <p>Binary Search halves the path, finding His light in O(log n)—like His love swiftly guiding us home.</p>
-        <h3>PageRank</h3>
-        <p>PageRank connects web pages with divine links, ranking their importance—like His grace uniting soul sisters in wisdom.</p>
+    <header>
+        <h1>Radha Soami, Beta! 🌟</h1>
+    </header>
+    <div class="bio-container">
+        <h2>About [Your Name]</h2>
+        <p>
+            Radha Soami! I am [Your Name], a devoted follower of the Radha Soami path, guided by His divine light toward Sach Khand. As the Director of <strong>UniGharib Consulting (OPC) Private Limited</strong>, I lead the development of <a href="http://anantsir.com" target="_blank">Awe Tap</a>, a platform to unite soul sisters through CSE wonder, physics, chemistry, and spiritual wisdom.
+        </p>
+        <p>
+            I hold a B.Tech in Computer Science Engineering and am preparing for GATE CS 2026, using my knowledge to create quizzes and vlogs for Awe Tap on <a href="http://anantsir.com" target="_blank">anantsir.com</a>. My journey includes overcoming challenges like JEE/GATE struggles, emotional triggers, and loneliness, which I transform into seva through His grace.
+        </p>
+        <p>
+            Astrologically, my Atmakaraka Venus in Pisces (12th house, Jagrata, Deepta) fuels my longing for divine love, while Jupiter Mahadasha and Mercury Antardasha guide my path of wisdom and communication. I’m committed to serving soul sisters, sharing His light through technology, and surrendering all efforts to the Almighty Father.
+        </p>
+        <p>
+            Join me in this sacred journey—try Awe Tap quizzes, watch my vlogs, and let’s unite in His love! Radha Soami!
+        </p>
     </div>
-
-    <script>
-        fetch('/quizzes/binary-search-quiz.json')
-            .then(response => response.json())
-            .then(data => {
-                const quizDiv = document.getElementById('quiz-container');
-                quizDiv.innerHTML = `
-                    <h3>${data.question}</h3>
-                    <ul>
-                        ${data.options.map(option => `<li>${option}</li>`).join('')}
-                    </ul>
-                    <p>${data.note}</p>
-                `;
-            })
-            .catch(error => console.error('Error loading quiz:', error));
-    </script>
+    <footer>
+        <p>Radha Soami | Serving Soul Sisters in His Light | 🌟 #AweTap</p>
+    </footer>
 </body>
 </html>
